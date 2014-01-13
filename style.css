@@ -1,0 +1,81 @@
+/*
+Theme Name: CoolvetiQuotes
+Theme URI: http://www.marcellobrivio.com/wordpress/coolvetiquotes/
+Description: A very simple theme with a very simple purpose: using WordPress as a citation visualizer.
+Version: 1.1.1
+Author: Marcello Brivio
+Author URI: http://www.marcellobrivio.com/
+License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+License URI: http://creativecommons.org/licenses/by-nc-sa/3.0/
+Tags: one-column, flexible-width, custom-menu
+*/
+
+html, body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background: #343 url('images/virgolette.png') no-repeat fixed 98% 98%; color: #fff;}
+
+body {font-size: 40px;} /* Default*/ 
+@media only screen and (max-width: 1024px) {body {font-size: 30px;}}
+@media only screen and (max-width: 800px) {body {font-size: 20px;}}
+
+p {font-size: 100%;}
+h1 {font-size: 300%;}
+h2 {font-size: 200%;}
+h3 {font-size: 150%;}
+h4 {font-size: 125%;}
+h5 {font-size: 110%;}
+h6 {font-size: 100%;}
+
+#toolbar {position: absolute; top: 0; left: 0; width: 100%; height: 41px; background: transparent url('images/toolbar.png') repeat-x;}
+#logo {position: absolute; top: 5px; left: 5px; display: block; width: 240px; height: 27px; margin: 0; background-image: url('images/logo.png'); background-repeat: no-repeat;}
+#logo span {display: none;}
+#menu {margin: 0; padding: 0; position: absolute; top: 10px; left: 270px; font-size: 16px; height: 16px; overflow: hidden;}
+#menu li {margin: 20px; display: inline; list-style-type: none;}
+#menu li a {text-transform: uppercase; color: #fff; text-decoration: none;}
+#menu li a:hover {color: #438193;}
+
+#title {font-family: 'CoolveticaRegular', Arial, sans-serif; font-size: 300%; text-shadow:#000 4px 4px 6px; margin: 60px 20px -20px; font-weight: normal;}
+#body {font-family: Arial, Helvetica, sans-serif; font-size: 100%; line-height: 100%; margin: 20px; text-shadow:#000 4px 4px 6px; width: 80%; max-width: 800px;}
+#body p {margin: 20px 0;}
+#body a {color: #dedede;}
+#body a.special {color: #00ccff;}
+#body a:hover {text-decoration: none;}
+#body h1, h2, h3, h4, h5, h6 {margin: 60px 0 20px;}
+#body ul li {margin-bottom: 20px}
+
+#container {z-index: -1; width: 100%; height: 100%; margin: 0; padding: 0; position: absolute; top: 0; left: 0;}
+#container div {font-family: 'CoolveticaRegular', Arial, sans-serif; width: 80%; max-width: 1024px; float: right; clear: both; position: absolute; right: 30px; bottom: 30px; color: #fff;}
+#container h1 {text-shadow:#000 4px 4px 6px; text-align: right; font-weight: normal; margin: 10px 0 0 0; line-height: 90%;}
+#container p {font-size: 100%; text-shadow:#000 4px 4px 6px; text-align: right; font-weight: normal; margin: 10px 0 0 0;}	
+#container p.tags {display: none;}
+#container .stickystar {position: absolute; right: 0; top: -60px;}
+.error404 {background: #343 url('images/404.png') no-repeat fixed 10px 60px;} /* Special container background for Error 404 template */
+
+#archive {font-family: 'CoolveticaRegular', Arial, sans-serif; margin: 80px 20px 20px; width: 80%; max-width: 800px;}
+#archive div.post {background: transparent; border-bottom: 1px dotted #5b685b; padding-bottom: 40px;}
+#archive h2 {font-size: 100%; margin: 40px 0 20px; font-weight: normal; line-height: 80%;}
+#archive h2 a {text-shadow:#000 4px 4px 6px; color: #fff; text-decoration: none;}
+#archive h2 a:hover {text-decoration: underline;}
+#archive p {text-shadow:#000 4px 4px 6px; font-size: 60%; margin: -10px 50px 0 0;}
+#archive p.tags {display: none;}
+#archive .stickystar {display: inline; width: 35px; height: 35px; -ms-interpolation-mode: bicubic;}
+
+#controls {position: absolute; bottom: 0; left: 0; width: 77px; height: 36px; background-color: transparent; background-image: url('images/fold.png'); background-repeat: no-repeat;}
+#controls #previous {float: left; margin: 7px 0 0 6px; border: none;}
+#controls #next {float: right; margin: 7px 12px 0 0; border: none;}
+
+#pagination  {display: block; margin: 40px auto; width: 145px; height: 39px; background-color: transparent; background-image: url('images/pagination.png'); background-repeat: no-repeat;}
+#pagination #previous {float: left; margin: 8px 0 0 20px; border: none;}
+#pagination #next {float: right; margin: 8px 20px 0 0; border: none;}
+
+
+
+
+
+/* WordPress Unit Test required classes */
+.sticky {}
+.wp-caption {display: none;}
+.wp-caption-text {display: none;}
+.gallery-caption {display: none;}
+.bypostauthor {display: none;}
+.alignright {text-align: right;}
+.alignleft {text-align: left;}
+.aligncenter {text-align: center}
